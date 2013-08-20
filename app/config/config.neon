@@ -20,9 +20,6 @@ common:
     console:
         url: ...
 
-    extensions:
-        console: Kdyby\Console\DI\ConsoleExtension
-
 production < common:
     parameters:
         database:
