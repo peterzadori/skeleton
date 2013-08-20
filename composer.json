@@ -1,0 +1,7 @@
+{
+	"name": "peterzadori/skeleton",
+	"minimum-stability": "dev",
+	"require": {
+		"peterzadori/movi": "@dev"
+	}
+}

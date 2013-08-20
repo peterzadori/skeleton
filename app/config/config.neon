@@ -1,0 +1,43 @@
+common:
+    php:
+        date.timezone: Europe/Bratislava
+
+    nette:
+        session:
+            autoStart: true
+            expiration: '+ 1 day'
+        xhtml: no
+
+    movi:
+        project: ...
+        password:
+            salt: $2a$07$
+            algorithm: sha512
+
+    events:
+        debugger: false
+
+    console:
+        url: ...
+
+    extensions:
+        console: Kdyby\Console\DI\ConsoleExtension
+
+production < common:
+    parameters:
+        database:
+            driver: mysql
+            host:
+            database:
+            user:
+            password:
+
+development < common:
+    parameters:
+        database:
+            driver: mysql
+            host:
+            database:
+            user:
+            password:
+            profiler: true
