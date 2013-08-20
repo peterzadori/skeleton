@@ -9,7 +9,6 @@ use movi\Config\Configurator;
 
 // Require loader
 require __DIR__ . '/../vendor/autoload.php';
-require __DIR__ . '/../libs/peterzadori/movi/src/loader.php';
 
 // Create configurator
 $configurator = new Configurator;
